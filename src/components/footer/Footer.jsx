@@ -120,7 +120,7 @@ function Footer() {
               </path>
             </svg>
           </div>
-          <a href="">
+          <a href="https://github.com/VictoriaRaaz/ProjectUT4">
             <div class="social-icon-4">
               <svg fill="white" viewBox="0 0 496 512" height="1.6em">
                 <path
