@@ -1,0 +1,215 @@
+body {
+  background-color: #ECEBDE;
+}
+
+.title {
+  text-align: center;
+}
+
+.second-title h1 {
+  text-align: center;
+  border-top: 3px solid #ccc;
+  padding-top: 30px;
+}
+
+.recipes-of-the-day {
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap; 
+  justify-content: center;
+  gap: 20px;
+}
+
+.recipe-of-the-day {
+  width: 220px;
+  background-color: white;
+  padding: 15px;
+  border-radius: 10px;
+  text-align: center;
+  box-shadow: 0px 4px 6px rgba(0, 0, 0, 0.1);
+  transition: transform 0.3s ease-in-out;
+}
+
+.recipe-of-the-day a {
+  text-decoration: none;
+  color: inherit;
+}
+
+.recipe-of-the-day:hover {
+  transform: scale(1.05);
+}
+
+.recipe-of-the-day img {
+  width: 100%;
+  height: auto;
+  border-radius: 8px;
+}
+
+.recipe-of-the-day p {
+  font-size: 14px;
+  color: #555;
+}
+
+.third-title h1 {
+  text-align: center;
+  border-top: 3px solid #ccc;
+  padding-top: 30px;
+}
+
+.seasonal-recipes {
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  justify-content: center;
+  gap: 20px;
+}
+
+.seasonal-recipe {
+  width: 220px;
+  background-color: white;
+  padding: 15px;
+  border-radius: 10px;
+  text-align: center;
+  box-shadow: 0px 4px 6px rgba(0, 0, 0, 0.1);
+  transition: transform 0.3s ease-in-out;
+}
+
+.seasonal-recipe a {
+  text-decoration: none;
+  color: inherit;
+}
+
+.seasonal-recipe:hover {
+  transform: scale(1.05);
+}
+
+.seasonal-recipe img {
+  width: 100%;
+  height: auto;
+  border-radius: 8px;
+}
+
+.seasonal-recipe p {
+  font-size: 14px;
+  color: #555;
+}
+
+.fourth-title h1 {
+  text-align: center;
+  border-top: 3px solid #ccc;
+  padding-top: 30px;
+}
+
+.gluten-free {
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  justify-content: center;
+  gap: 20px;
+}
+
+.gluten-free-recipe {
+  width: 220px;
+  background-color: white;
+  padding: 15px;
+  border-radius: 10px;
+  text-align: center;
+  box-shadow: 0px 4px 6px rgba(0, 0, 0, 0.1);
+  transition: transform 0.3s ease-in-out;
+  margin-bottom: 20px;
+}
+
+.gluten-free-recipe a {
+  text-decoration: none;
+  color: inherit;
+}
+
+.gluten-free-recipe:hover {
+  transform: scale(1.05);
+}
+
+.gluten-free-recipe img {
+  width: 100%;
+  height: auto;
+  border-radius: 8px;
+}
+
+.gluten-free-recipe p {
+  font-size: 14px;
+  color: #555;
+}
+
+/* Extra small devices (phones, 600px and down) */
+@media only screen and (max-width: 600px) {
+  .second-title h1 {
+    font-size: 27px;
+  }
+
+  .third-title h1 {
+    font-size: 27px;
+  }
+
+  .fourth-title h1 {
+   font-size: 27px;
+  }
+}
+
+/* Small devices (portrait tablets and large phones, 600px and up) */
+@media only screen and (min-width: 600px) and (max-width: 767px) {
+  .second-title h1 {
+    font-size: 27px;
+  }
+
+  .third-title h1 {
+    font-size: 27px;
+  }
+
+  .fourth-title h1 {
+   font-size: 27px;
+  }
+}
+
+/* Medium devices (landscape tablets, 768px and up) */
+@media only screen and (min-width: 768px) {
+  .second-title h1 {
+    font-size: 30px;
+  }
+
+  .third-title h1 {
+    font-size: 30px;
+  }
+
+  .fourth-title h1 {
+   font-size: 30px;
+  }
+}
+
+/* Large devices (laptops/desktops, 992px and up) */
+@media only screen and (min-width: 992px) {
+  .second-title h1 {
+    font-size: 35px;
+  }
+
+  .third-title h1 {
+    font-size: 35px;
+  }
+
+  .fourth-title h1 {
+   font-size: 35px;
+  }
+}
+
+/* Extra large devices (large laptops and desktops, 1200px and up) */
+@media only screen and (min-width: 1200px) {
+  .second-title h1 {
+    font-size: 35px;
+  }
+
+  .third-title h1 {
+    font-size: 35px;
+  }
+
+  .fourth-title h1 {
+   font-size: 35px;
+  }
+}
