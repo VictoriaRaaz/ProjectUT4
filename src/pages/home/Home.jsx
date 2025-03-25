@@ -24,7 +24,9 @@ function Home() {
   return (
     <>
       <Header />
-      <h1 className="title">{t("Recetas Fáciles y Rápidas")}</h1>
+      <div className="title">
+        <h1>{t("Recetas Fáciles y Rápidas")}</h1>
+      </div>
       <Slider />
 
       <div className="second-title">

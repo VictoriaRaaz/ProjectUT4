@@ -5,7 +5,7 @@ function Footer() {
   const { t } = useTranslation();
   return (
     <footer className="footer-container">
-      <h2>{t("Recomendamos")}:</h2>
+      <h2>{t("Recomendaciones")}:</h2>
       <div className="footer-columns">
         <div className="column">
           <h1>{t("Postres")}</h1>

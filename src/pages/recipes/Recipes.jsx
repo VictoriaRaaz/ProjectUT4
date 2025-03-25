@@ -1,6 +1,7 @@
 import Card from "../../components/card/Card"
 import Header from "../../components/header/Header"
 import Footer from "../../components/footer/Footer";
+import "./Recipes.css";
 
 import dish5 from "../../assets/dish5.png";
 import dish6 from "../../assets/dish6.jpg";

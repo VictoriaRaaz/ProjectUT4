@@ -1,47 +1,47 @@
 import { useEffect, useState } from 'react';
-import './Review.css';
-import reviewsService from '../../services/reviews/reviewsService';
+import './Comments.css';
+import commentsService from '../../services/comments/commentsFirebase';
 
-function Review() {
-    const [reviews, setReviews] = useState([]);
+function Comment() {
+  const [comments, setComments] = useState([]);
 
-    const findAllReviews = () => {
-        let allReviews = [];
-        commentsService.getAllReviews()
-            .then((res) => {
-                res.forEach((d) => {
-                    const key = d.key;
-                    const data = d.val();
-                    allReviews.push({
-                        key: key,
-                        name: data.name,
-                        review: data.review,
-                        value: data.value
-                    });
-                });
+  const findAllComments = () => {
+    let allComments = []; // Corregido el nombre de la variable
+    commentsService.getAllComments()
+      .then((res) => {
+        res.forEach((d) => {
+          const key = d.key;
+          const data = d.val();
+          allComments.push({
+            key: key,
+            name: data.name,
+            comment: data.comment,
+            value: data.value
+          });
+        });
 
-                setReviews([...allReviews]);
-            })
-            .catch((e) => {
-                console.log(e);
-            });
-    };
+        setComments([...allComments]); // Corregida la referencia a 'allComments'
+      })
+      .catch((e) => {
+        console.error('Error fetching comments:', e); // Mejor mensaje de error
+      });
+  };
 
-    useEffect(() => {
-        findAllReviews();
-    }, []);
+  useEffect(() => {
+    findAllComments();
+  }, []);
 
-    return (
-        <div className="reviews-container">
-            {reviews.map((review, index) => (
-                <div className="review" key={index}>
-                    <h3>{review.name}</h3>
-                    <p>{review.review}</p>
-                    <p>Rating: {review.value}</p>
-                </div>
-            ))}
+  return (
+    <div className="comments-container"> {/* Corregida la clase CSS */}
+      {comments.map((comment, index) => ( // Corregida la referencia a 'comments'
+        <div className="comment" key={comment.key || index}> {/* Usar key única */}
+          <h3>{comment.name}</h3>
+          <p>{comment.comment}</p>
+          <p>Rating: {comment.value}</p>
         </div>
-    );
+      ))}
+    </div>
+  );
 }
 
-export default Review;
+export default Comment;

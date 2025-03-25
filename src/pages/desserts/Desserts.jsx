@@ -1,5 +1,6 @@
 import Card from "../../components/card/Card"
 import Header from "../../components/header/Header";
+import "./Desserts.css";
 
 import dish14 from "../../assets/dish14.png";
 import dish10 from "../../assets/dish10.png";
@@ -38,9 +39,9 @@ function Desserts() {
   return (
     <>
       <Header />
-      <div className="recipes">
+      <div className="desserts">
         <h1>{t("Postres")}</h1>
-        <div className="recipes-list">
+        <div className="desserts-list">
           {desserts.map((dessert, index) => (
             <Card
               key={index}
