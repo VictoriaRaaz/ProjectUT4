@@ -6,6 +6,7 @@ import addRecipesFirebase from '../../services/addRecipes/addRecipesFirebase';
 
 function Recipe() {
   const [recipes, setRecipes] = useState([]);
+  const [editingRecipe, setEditingRecipe] = useState(null); // Guarda la receta que se está editando
   const refForm = useRef();
 
   const getAllRecipes = () => {
@@ -34,15 +35,33 @@ function Recipe() {
     });
   }
 
-  const addRecipe = (e) => {
+  const addOrUpdateRecipe = (e) => {
     e.preventDefault();
     const title = e.target.title.value;
     const text = e.target.text.value;
-    addRecipesFirebase.addRecipe(title, text).then((res) => {
-      refForm.current.reset();
-      setRecipes(oldValues => [...oldValues, { key: res.key, title, text }])
-    })
-  }
+
+    if (editingRecipe) {
+      // Si estamos editando, actualizamos la receta
+      addRecipesFirebase.updateRecipe(editingRecipe.key, title, text).then(() => {
+        getAllRecipes();
+        setEditingRecipe(null); // Salimos del modo edición
+        refForm.current.reset();
+      });
+    } else {
+      // Si no hay edición, añadimos una nueva receta
+      addRecipesFirebase.addRecipe(title, text).then((res) => {
+        refForm.current.reset();
+        setRecipes(oldValues => [...oldValues, { key: res.key, title, text }]);
+      });
+    }
+  };
+
+  const startEditing = (recipe) => {
+    setEditingRecipe(recipe);
+    refForm.current.title.value = recipe.title;
+    refForm.current.text.value = recipe.text;
+  };
+
 
   useEffect(() => {
     getAllRecipes();
@@ -51,23 +70,27 @@ function Recipe() {
   return (
     <>
       <Header />
-      <div className="title-add-recipes">
-        <h1>Añade tus recetas</h1>
+      <div className="share-recipes">
+        <div className="title-add-recipes">
+          <h1>{editingRecipe ? "Editar Receta" : "Añade tus recetas"}</h1>
+        </div>
+        <div className="added-recipes">
+          {recipes.map((recipe) => (
+            <div className="list-recipes" key={recipe.key}>
+              <h3>{recipe.title}</h3>
+              <p>{recipe.text}</p>
+              <button onClick={() => startEditing(recipe)}>Editar</button>
+              <button onClick={() => removeRecipe(recipe.key)} className="delete-button">Eliminar</button>
+            </div>
+          ))}
+          <form ref={refForm} onSubmit={addOrUpdateRecipe}>
+            <input type="text" name="title" placeholder="Título" required />
+            <textarea name="text" placeholder="Escribe tu receta" required />
+            <button type="submit">{editingRecipe ? "Actualizar Receta" : "Agregar Receta"}</button>
+          </form>
+        </div>
       </div>
-      <div className="added-recipes">
-        {recipes.map((recipe) => (
-          <div className="list-recipes" key={recipe.key}> {/* Clase vacía se puede eliminar o modificar */}
-            <h3>{recipe.title}</h3>
-            <p>{recipe.text}</p>
-            <button onClick={() => removeRecipe(recipe.key)}>Eliminar</button>
-          </div>
-        ))}
-        <form ref={refForm} onSubmit={addRecipe}>
-          <input type="text" name="title" placeholder="Título" required />
-          <textarea name="text" placeholder="Escribe tu receta" required />
-          <button type="submit">Agregar Receta</button>
-        </form>
-      </div>
+
       <Footer />
     </>
   );

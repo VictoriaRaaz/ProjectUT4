@@ -1,9 +1,12 @@
-.title-add-recipes {
-  margin-top: 130px;
+.share-recipes{
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
 }
 
-.title-add-recipes h1 {
-  text-align: center;
+.title-add-recipes {
+  margin-top: 130px;
 }
 
 .added-recipes {
@@ -84,4 +87,39 @@ button[type="submit"] {
 
 button[type="submit"]:hover {
   background: #388E3C;
+}
+
+/* Extra small devices (phones, 600px and down) */
+@media only screen and (max-width: 600px) {
+  .added-recipes {
+    width: 400px;
+  }
+}
+
+/* Small devices (portrait tablets and large phones, 600px and up) */
+@media only screen and (min-width: 600px) {
+  .added-recipes {
+    width: 500px;
+  }
+}
+
+/* Medium devices (landscape tablets, 768px and up) */
+@media only screen and (min-width: 768px) {
+  .added-recipes {
+    width: 600px;
+  }
+}
+
+/* Large devices (laptops/desktops, 992px and up) */
+@media only screen and (min-width: 992px) {
+  .added-recipes {
+    width: 700px;
+  }
+}
+
+/* Extra large devices (large laptops and desktops, 1200px and up) */
+@media only screen and (min-width: 1200px) {
+  .added-recipes {
+    width: 800px;
+  }
 }

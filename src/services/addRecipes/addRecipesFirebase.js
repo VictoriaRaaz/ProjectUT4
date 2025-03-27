@@ -1,5 +1,5 @@
 import db from "../firebase-recipes";
-import { ref, get, remove, push } from "firebase/database";
+import { ref, get, remove, push, set } from "firebase/database";
 
 const dbRef = ref(db, "/add-recipes");
 
@@ -19,8 +19,14 @@ const removeRecipe = (key) => {
   return remove(dbRefRecipe);
 };
 
+const updateRecipe = (key, title, text) => {
+  const dbRefRecipe = ref(db, `/add-recipes/${key}`);
+  return set(dbRefRecipe, { title, text }); // Sobreescribe la receta
+};
+
 export default {
   getAllRecipes,
   addRecipe,
   removeRecipe,
+  updateRecipe,
 };
