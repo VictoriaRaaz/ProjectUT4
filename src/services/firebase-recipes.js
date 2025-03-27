@@ -6,13 +6,13 @@ import { getDatabase } from "firebase/database";
 
 // Your web app's Firebase configuration
 const firebaseConfig = {
-  apiKey: "AIzaSyBXfZzRHKpmaf68MkEBXCg79k9aNzWjY28",
-  authDomain: "comments-d3719.firebaseapp.com",
-  databaseURL: "https://comments-d3719-default-rtdb.firebaseio.com",
-  projectId: "comments-d3719",
-  storageBucket: "comments-d3719.firebasestorage.app",
-  messagingSenderId: "129893615147",
-  appId: "1:129893615147:web:eea3c793d1e0e032f5cc6e"
+  apiKey: "AIzaSyDV6Zphje715nlDMZnc0qxs2g7YOOrVx6M",
+  authDomain: "addrecipes-43083.firebaseapp.com",
+  databaseURL: "https://addrecipes-43083-default-rtdb.firebaseio.com/",
+  projectId: "addrecipes-43083",
+  storageBucket: "addrecipes-43083.firebasestorage.app",
+  messagingSenderId: "779707449362",
+  appId: "1:779707449362:web:3a9709b019f1efffa998cb"
 };
 
 // Initialize Firebase

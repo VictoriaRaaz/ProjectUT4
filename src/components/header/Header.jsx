@@ -9,8 +9,10 @@ function Header() {
   return (
     <header className="header-container">
       <ul className="header-menu">
-        <li className="home-left"><a href="/home">{t("Inicio")}</a></li>
-        <li className="logo-container"><img src={logo} alt="logo" className="logo" /></li>
+        <li><a href="/add-recipes">Añade recetas</a></li>
+        <a href="/home" className="logo-container">
+          <li className="logo-container"><img src={logo} alt="logo" className="logo" /></li>
+        </a>
         <li><a href="/recipes">{t("Recetas")}</a></li>
         <li><a href="/desserts">{t("Postres")}</a></li>
         <LanguageSelector />
