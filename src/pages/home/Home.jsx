@@ -29,7 +29,7 @@ function Home() {
       </div>
       <Slider />
 
-      <div className="second-title">
+      <div className="second-title" id="recommendations">
         <h1>{t("Hoy recomendamos:")}</h1>
       </div>
       <div className="recipes-of-the-day">
@@ -66,7 +66,7 @@ function Home() {
         </div>
       </div>
 
-      <div className="third-title">
+      <div className="third-title" id="seasonal-recipes">
         <h1>{t("Recetas de temporada")}</h1>
       </div>
       <div className="seasonal-recipes">

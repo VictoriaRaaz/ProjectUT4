@@ -1,5 +1,6 @@
 import "./Footer.css";
 import { useTranslation } from 'react-i18next';
+import rss from "../../assets/rss.png";
 
 function Footer() {
   const { t } = useTranslation();
@@ -132,7 +133,7 @@ function Footer() {
         </div>
       </div>
       <div className="all-rights-reserved">
-        <p>© 2024 RecipeShare. {t("Todos los derechos reservados.")} | <a href="/privacy-policy">{t("Política de Privacidad y Cookies")}</a></p>
+      <a href="../../../public/rss/rss.xml"><img src={rss} alt="rss-icon" className="rss-icon" /></a><p>© 2024 RecipeShare. {t("Todos los derechos reservados.")} | <a href="/privacy-policy">{t("Política de Privacidad y Cookies")}</a></p>
       </div>
 
     </footer>

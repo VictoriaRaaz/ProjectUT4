@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<rss version="2.0">
+  <channel>
+    <title>RecipeShare RSS Feed</title>
+    <link>https://addrecipes-43083.web.app</link>
+    <description>Stay updated with the latest reviews and sports information from GameFinder.</description>
+    <item>
+      <title>Recommendations</title>
+      <link>https://addrecipes-43083.web.app#recommendations</link>
+      <description>Read the latest recommendations from our users.</description>
+    </item>
+    <item>
+      <title>Seasonal recipes</title>
+      <link>https://addrecipes-43083.web.app#seasonal-recipes</link>
+      <description>Explore the available recipes and their details.</description>
+    </item>
+  </channel>
+</rss>

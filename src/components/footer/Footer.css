@@ -170,6 +170,9 @@ li {
 
 .all-rights-reserved{
   margin-top: 70px;
+  /* display: flex;
+  flex-direction: row;
+  align-content: center; */
 }
 
 .all-rights-reserved a{
@@ -180,6 +183,10 @@ li {
 
 .all-rights-reserved a:hover {
   color: #e74c3c;
+}
+
+.rss-icon {
+  height: 25px;
 }
 
 /* Extra small devices (phones, 600px and down) */
