@@ -1,6 +1,6 @@
 # My Project: Recipe Page
 
-Welcome to my proyect! This website will let you explore delicious recipes, leave comments on your favorite dishes, and share your own creations with the community.
+Welcome to my proyect! This website will let you explore delicious recipes and share your own creations with the community.
 
 # Features
 
