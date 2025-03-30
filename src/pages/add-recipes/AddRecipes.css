@@ -1,0 +1,131 @@
+.share-recipes {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+.title-add-recipes {
+  margin-top: 130px;
+}
+
+.title-add-recipes h1 {
+  font-family: Georgia;
+  color: rgba(117, 42, 10, 0.837);
+  text-shadow: 2px 2px 4px rgba(167, 155, 155, 0.954);
+}
+
+.added-recipes {
+  width: 800px;
+  padding: 20px;
+  background: #fff;
+  border-radius: 12px;
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+  text-align: center;
+  margin-bottom: 50px;
+}
+
+.list-recipes {
+  background: #f9f9f9;
+  padding: 15px;
+  margin: 15px 0;
+  border-radius: 8px;
+  box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+}
+
+.recipes h3 {
+  color: #333;
+  margin-bottom: 10px;
+}
+
+.recipes p {
+  color: #555;
+  font-size: 14px;
+  line-height: 1.5;
+}
+
+.recipes button {
+  background: #ff4d4d;
+  color: white;
+  border: none;
+  padding: 8px 12px;
+  cursor: pointer;
+  border-radius: 5px;
+  font-size: 14px;
+  transition: background 0.3s ease;
+}
+
+.recipes button:hover {
+  background: #cc0000;
+}
+
+/* Estilo del formulario */
+form {
+  margin-top: 20px;
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+}
+
+input,
+textarea {
+  padding: 10px;
+  border: 1px solid #ddd;
+  border-radius: 5px;
+  font-size: 16px;
+}
+
+textarea {
+  height: 100px;
+  resize: none;
+}
+
+button[type="submit"] {
+  background: #4CAF50;
+  color: white;
+  border: none;
+  padding: 10px 15px;
+  cursor: pointer;
+  font-size: 16px;
+  border-radius: 5px;
+  transition: background 0.3s ease;
+}
+
+button[type="submit"]:hover {
+  background: #388E3C;
+}
+
+/* Extra small devices (phones, 600px and down) */
+@media only screen and (max-width: 600px) {
+  .added-recipes {
+    width: 400px;
+  }
+}
+
+/* Small devices (portrait tablets and large phones, 600px and up) */
+@media only screen and (min-width: 600px) {
+  .added-recipes {
+    width: 500px;
+  }
+}
+
+/* Medium devices (landscape tablets, 768px and up) */
+@media only screen and (min-width: 768px) {
+  .added-recipes {
+    width: 600px;
+  }
+}
+
+/* Large devices (laptops/desktops, 992px and up) */
+@media only screen and (min-width: 992px) {
+  .added-recipes {
+    width: 700px;
+  }
+}
+
+/* Extra large devices (large laptops and desktops, 1200px and up) */
+@media only screen and (min-width: 1200px) {
+  .added-recipes {
+    width: 800px;
+  }
+}

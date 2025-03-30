@@ -1,0 +1,9 @@
+.recipes {
+  margin-top: 130px;
+}
+
+.recipes h1{
+  font-family: Georgia;
+  color: rgba(117, 42, 10, 0.837);
+  text-shadow: 2px 2px 4px rgba(167, 155, 155, 0.954);
+}
