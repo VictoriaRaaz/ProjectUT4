@@ -6,11 +6,11 @@ Welcome to my proyect! This website will let you explore delicious recipes and s
 
 📚 Explore Recipes: Discover a wide variety of recipes — from traditional dishes to more innovative options, including vegetarian recipes, gluten-free meals, irresistible desserts, and quick everyday meals. You will be able:
 
-📝 Leave Comments: Share your thoughts and tips on the recipes.
+📝 Leave Comments: Share your thoughts and tips on the recipes. (working on it)
 
 🍳 Upload Your Own Recipes: Share your favorite dishes with the community.
 
-⭐ Favorites: Save your favorite recipes for quick access.
+⭐ Favorites: Save your favorite recipes for quick access.(working on it)
 
 # Technologies Used
 
