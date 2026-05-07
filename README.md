@@ -4,19 +4,19 @@ Welcome to my proyect! This website will let you explore delicious recipes and s
 
 # Features
 
-📚 Explore Recipes: Discover a wide variety of recipes — from traditional dishes to more innovative options, including vegetarian recipes, gluten-free meals, irresistible desserts, and quick everyday meals. You will be able:
+Explore Recipes: Discover a wide variety of recipes — from traditional dishes to more innovative options, including vegetarian recipes, gluten-free meals, irresistible desserts, and quick everyday meals. You will be able:
 
-📝 Leave Comments: Share your thoughts and tips on the recipes. (working on it)
+Leave Comments: Share your thoughts and tips on the recipes. (working on it)
 
-🍳 Upload Your Own Recipes: Share your favorite dishes with the community.
+Upload Your Own Recipes: Share your favorite dishes with the community.
 
-⭐ Favorites: Save your favorite recipes for quick access.(working on it)
+Favorites: Save your favorite recipes for quick access.(working on it)
 
 # Technologies Used
 
-🌐 Frontend: React (JSX), CSS3, JavaScript
+Frontend: React (JSX), CSS3, JavaScript
 
-🔥 Backend & Database: Firebase.
+Backend & Database: Firebase.
 
 # Acknowledgments
 
